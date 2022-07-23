@@ -1,0 +1,279 @@
+* {
+  /* imp for all the html elements*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*include content, padding, border */
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none; /*bullets point get removed. */
+}
+nav ul li {
+  display: inline-block; /*make it horizontal*/
+  margin-right: 25px;
+  font-size: 20px;
+}
+a {
+  text-decoration: none; /*underline get removed from text*/
+  color: #d5cccc;
+}
+.container {
+  max-width: 1300px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-2 {
+  flex-basis: 50%; /*both columns occupied 50% of space*/
+  min-width: 300px;
+}
+.col-2 img {
+  max-width: 100%;
+  padding: 50px 0;
+}
+.button {
+  display: inline-block;
+  background-color: darkred;
+  color: aliceblue;
+  padding: 15px;
+  font-size: large;
+  margin: 30px 0;
+  border-radius: 35px;
+}
+.button:hover {
+  background-color: red;
+}
+.header {
+  background-color: #950740;
+}
+.header .row {
+  margin-top: 75px;
+}
+.category {
+  margin: 70px 0;
+}
+.col-3 {
+  min-width: 50px;
+  flex-basis: 30%;
+  margin-bottom: 30px;
+}
+.col-3 img {
+  width: 100%;
+  height: 50%;
+}
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 10%;
+  transition: transform 0.8s; /*if I tick cursor of any product it moves by 0.7sec in y direction.*/
+}
+.col-4 img {
+  width: 150%;
+}
+.checked {
+  background-color: black;
+}
+.title {
+  text-align: center;
+  margin-top: -5px;
+  margin-bottom: 100px;
+  position: relative;
+  line-height: 65px;
+  color: #555;
+}
+.title::after {
+  content: "";
+  background-color: #ff523b;
+  border-radius: 5px;
+  width: 80px;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.col-4 p {
+  font-size: 18px;
+}
+.col-4:hover {
+  transform: translateY(-5px); /*it will move by 5px in y axis.*/
+}
+.col-4 img {
+  margin-left: auto;
+  width: 200px;
+}
+
+/* offer */
+
+.offer {
+  background-color: #c79e9e;
+  margin-top: 80px;
+  padding: 30px 0;
+}
+small {
+  color: black;
+}
+.test {
+  padding-top: 100px;
+}
+.test .col-3 {
+  text-align: center;
+  padding: 40px 20px;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 20px 0px #18272d;
+  transition: transform 0.5s;
+}
+.test .col-3 img {
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
+  box-shadow: 20px;
+}
+.test .col-3:hover {
+  transform: translateY(-10px);
+}
+.col-3 p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #370000;
+}
+.brands {
+  margin: 100px auto;
+}
+.col-5 {
+  width: 160px;
+}
+.col-5 img {
+  width: 100%;
+  cursor: pointer;
+}
+.footer {
+  background-color: rgb(30, 30, 30);
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 50px 0 20px;
+}
+.footer h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.footer-col-1 {
+  flex-basis: 30%;
+}
+.footer-col-2 {
+  flex: 1;
+  text-align: center;
+}
+.footer-col-2 img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.footer-col-3,
+.footer-col-4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
+.app-logo {
+  margin-top: 20px;
+}
+.app-logo img {
+  width: 120px;
+}
+.footer hr {
+  border: none;
+  background-color: #b5b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+.copyright {
+  text-align: center;
+}
+.menu-icon {
+  width: 28px;
+  margin-left: 20px;
+}
+
+/* account page */
+
+.account-page {
+  padding: 50px;
+  display: flex;
+}
+.form-container {
+  background-color: #bdb8b6;
+  width: 321px;
+  height: 457px;
+  position: relative;
+  text-align: center;
+  padding: 9px;
+  box-shadow: inset -4px -13px 20px 20px #685580;
+  overflow: scroll;
+}
+.form-container span {
+  font-weight: bolder;
+  text-align: center;
+  padding: 0 10px;
+  color: rgb(37, 35, 35);
+  cursor: pointer;
+  width: 100px;
+  /* position: absolute; */
+  display: inline-block;
+}
+
+.form-container form {
+  padding: 0 20px;
+}
+form input {
+  width: 100%;
+  height: 47px;
+  margin: 18px 0;
+  padding: 0 14px;
+  border: 7px solid rgb(99, 35, 35);
+}
+form .btn {
+  width: 100%;
+  border: 2px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.form-container a {
+  color: black;
+}
+body {
+  font-family: "Kanit", sans-serif;
+}
