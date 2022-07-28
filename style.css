@@ -96,7 +96,7 @@ a {
   width: 150%;
 }
 .checked {
-  background-color: black;
+  color: darkorange;
 }
 .title {
   text-align: center;
